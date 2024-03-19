@@ -1,13 +1,19 @@
-package poly.car0;
+package poly.car1;
 
-public class CarMain0 {
+public class CarMain {
     public static void main(String[] args) {
         Driver driver = new Driver();
-        K3Car k3Car = new K3Car();
-        Model3Car model3Car = new Model3Car();
 
-        driver.setK3Car(k3Car);
-        driver.setModel3CarCar(model3Car);
+        K3Car k3Car = new K3Car();
+        driver.setCar(k3Car);
+
         driver.drive();
+
+        //차량변경
+        Model3Car model3Car = new Model3Car();
+        driver.setCar(model3Car);
+
+        driver.drive();
+
     }
 }
